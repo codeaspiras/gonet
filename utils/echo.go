@@ -2,6 +2,6 @@ package utils
 
 import "fmt"
 
-func Echo(text string, args ...interface{}) {
-	fmt.Printf("# "+text+"\n", args...)
+func Echo(template string, args ...interface{}) {
+	fmt.Printf("# "+template+"\n", args...)
 }

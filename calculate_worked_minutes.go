@@ -15,6 +15,7 @@ func CalculateWorkedMinutes(
 ) *Result {
 	var timeEntriesPerDate map[string][][]string
 	utils.GetJSON("registros-de-ponto.json", &timeEntriesPerDate)
+
 	result := Result{
 		WorkingMinutes: 0,
 		ExtraMinutes:   0,
